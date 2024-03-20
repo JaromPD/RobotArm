@@ -1,0 +1,74 @@
+import rclpy
+from rclpy.node import Node
+
+from std_msgs.msg import String
+
+from pyax12.connection import Connection
+import time
+
+# Connect to the serial port
+serial_connection = Connection(port="/dev/ttyUSB0", baudrate=57600)
+dynamixel_id = [5, 2, 6, 9, 12]
+dynamixel_angle_home = [0, 0, 0, -20, -50]
+dynamixel_angle_reach = [0, 20, -40, 20, -40]
+
+def home(serial_connection, dynamixel_id):
+    print("Going home")
+    serial_connection.goto(dynamixel_id[0], dynamixel_angle_home[0], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+    serial_connection.goto(dynamixel_id[1], dynamixel_angle_home[1], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+    serial_connection.goto(dynamixel_id[2], dynamixel_angle_home[2], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+    serial_connection.goto(dynamixel_id[3], dynamixel_angle_home[3], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+    serial_connection.goto(dynamixel_id[4], dynamixel_angle_home[4], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+
+def reach(serial_connection, dynamixel_id):
+    print("Reaching")
+    serial_connection.goto(dynamixel_id[0], dynamixel_angle_reach[0], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+    serial_connection.goto(dynamixel_id[1], dynamixel_angle_reach[1], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+    serial_connection.goto(dynamixel_id[2], dynamixel_angle_reach[2], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+    serial_connection.goto(dynamixel_id[3], dynamixel_angle_reach[3], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+    serial_connection.goto(dynamixel_id[4], dynamixel_angle_reach[4], speed=50, degrees=True)
+    time.sleep(2)    # Wait 1 second
+    
+class ServoSubscriber(Node):
+
+    def __init__(self):
+        super().__init__('servo_subscriber')
+        self.subscription = self.create_subscription(
+            String,
+            'servo',
+            self.listener_callback,
+            10)
+        self.subscription  # prevent unused variable warning
+
+    def listener_callback(self, msg):
+        self.get_logger().info('Servo heard: "%s"' % msg.data)
+        if msg.data == "HOME":
+            home(serial_connection, dynamixel_id)
+        if msg.data == "REACH":
+            reach(serial_connection, dynamixel_id)
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    servo_subscriber = ServoSubscriber()
+
+    rclpy.spin(servo_subscriber)
+
+    # Destroy the node explicitly
+    # (optional - otherwise it will be done automatically
+    # when the garbage collector destroys the node object)
+    servo_subscriber.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()

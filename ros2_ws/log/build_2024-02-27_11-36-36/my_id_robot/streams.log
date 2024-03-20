@@ -1,0 +1,29 @@
+[5.585s] Invoking command in '/home/redleader/ros2_ws/src/my_id_robot': PYTHONPATH=/home/redleader/ros2_ws/build/my_id_robot/prefix_override:/home/redleader/ros2_ws/install/my_id_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_id_robot build --build-base /home/redleader/ros2_ws/build/my_id_robot/build install --record /home/redleader/ros2_ws/build/my_id_robot/install.log --install-scripts $base/lib/my_id_robot --single-version-externally-managed
+[7.633s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[7.634s]   warnings.warn(
+[7.686s] running egg_info
+[7.690s] writing ../../build/my_id_robot/my_id_robot.egg-info/PKG-INFO
+[7.693s] writing dependency_links to ../../build/my_id_robot/my_id_robot.egg-info/dependency_links.txt
+[7.694s] writing entry points to ../../build/my_id_robot/my_id_robot.egg-info/entry_points.txt
+[7.696s] writing requirements to ../../build/my_id_robot/my_id_robot.egg-info/requires.txt
+[7.697s] writing top-level names to ../../build/my_id_robot/my_id_robot.egg-info/top_level.txt
+[7.712s] reading manifest file '../../build/my_id_robot/my_id_robot.egg-info/SOURCES.txt'
+[7.725s] writing manifest file '../../build/my_id_robot/my_id_robot.egg-info/SOURCES.txt'
+[7.726s] running build
+[7.726s] running build_py
+[7.729s] running install
+[7.735s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.736s]   warnings.warn(
+[7.736s] running install_lib
+[7.746s] running install_data
+[7.749s] running install_egg_info
+[7.758s] removing '/home/redleader/ros2_ws/install/my_id_robot/lib/python3.10/site-packages/my_id_robot-0.0.0-py3.10.egg-info' (and everything under it)
+[7.760s] Copying ../../build/my_id_robot/my_id_robot.egg-info to /home/redleader/ros2_ws/install/my_id_robot/lib/python3.10/site-packages/my_id_robot-0.0.0-py3.10.egg-info
+[7.769s] running install_scripts
+[7.905s] Installing main_subscriber script to /home/redleader/ros2_ws/install/my_id_robot/lib/my_id_robot
+[7.906s] Installing my_robot_launch script to /home/redleader/ros2_ws/install/my_id_robot/lib/my_id_robot
+[7.907s] Installing opencv_subscriber script to /home/redleader/ros2_ws/install/my_id_robot/lib/my_id_robot
+[7.909s] Installing servo_subscriber script to /home/redleader/ros2_ws/install/my_id_robot/lib/my_id_robot
+[7.910s] Installing voice_publisher script to /home/redleader/ros2_ws/install/my_id_robot/lib/my_id_robot
+[7.913s] writing list of installed files to '/home/redleader/ros2_ws/build/my_id_robot/install.log'
+[8.096s] Invoked command in '/home/redleader/ros2_ws/src/my_id_robot' returned '0': PYTHONPATH=/home/redleader/ros2_ws/build/my_id_robot/prefix_override:/home/redleader/ros2_ws/install/my_id_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_id_robot build --build-base /home/redleader/ros2_ws/build/my_id_robot/build install --record /home/redleader/ros2_ws/build/my_id_robot/install.log --install-scripts $base/lib/my_id_robot --single-version-externally-managed

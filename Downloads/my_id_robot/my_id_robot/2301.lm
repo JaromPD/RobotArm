@@ -1,0 +1,61 @@
+Language model created by QuickLM on Fri Apr 28 23:18:51 EDT 2023
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 9 sentences and 11 words
+
+\data\
+ngram 1=11
+ngram 2=18
+ngram 3=9
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.7324 DANCE -0.2218
+-1.7324 DRAW -0.2218
+-1.7324 FIND -0.2218
+-1.7324 GOODBYE -0.2218
+-1.7324 HELLO -0.2218
+-1.7324 PEN -0.2218
+-1.7324 REACH -0.2218
+-1.7324 SIGN -0.2218
+-1.7324 WAVE -0.2218
+
+\2-grams:
+-1.2553 <s> DANCE 0.0000
+-1.2553 <s> DRAW 0.0000
+-1.2553 <s> FIND 0.0000
+-1.2553 <s> GOODBYE 0.0000
+-1.2553 <s> HELLO 0.0000
+-1.2553 <s> PEN 0.0000
+-1.2553 <s> REACH 0.0000
+-1.2553 <s> SIGN 0.0000
+-1.2553 <s> WAVE 0.0000
+-0.3010 DANCE </s> -0.3010
+-0.3010 DRAW </s> -0.3010
+-0.3010 FIND </s> -0.3010
+-0.3010 GOODBYE </s> -0.3010
+-0.3010 HELLO </s> -0.3010
+-0.3010 PEN </s> -0.3010
+-0.3010 REACH </s> -0.3010
+-0.3010 SIGN </s> -0.3010
+-0.3010 WAVE </s> -0.3010
+
+\3-grams:
+-0.3010 <s> DANCE </s>
+-0.3010 <s> DRAW </s>
+-0.3010 <s> FIND </s>
+-0.3010 <s> GOODBYE </s>
+-0.3010 <s> HELLO </s>
+-0.3010 <s> PEN </s>
+-0.3010 <s> REACH </s>
+-0.3010 <s> SIGN </s>
+-0.3010 <s> WAVE </s>
+
+\end\

@@ -1,0 +1,6 @@
+{"timestamp":748696,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","experiment":"release-experiment-for-additional-metrics-for-product-insights-rollout"}}
+{"timestamp":749709,"category":"nimbus_events","name":"enroll_failed","extra":{"experiment":"spocs-endpoint-rollout-release","reason":"feature-conflict"}}
+{"timestamp":751043,"category":"nimbus_events","name":"enroll_failed","extra":{"experiment":"pxi-toolbar-default-visibility-rollout","reason":"feature-conflict"}}
+{"timestamp":761042,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","experiment":"release-experiment-for-additional-metrics-for-product-insights-rollout"}}
+{"timestamp":761518,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","experiment":"spocs-endpoint-rollout-release"}}
+{"timestamp":762709,"category":"nimbus_events","name":"enroll_failed","extra":{"experiment":"pxi-toolbar-default-visibility-rollout","reason":"feature-conflict"}}

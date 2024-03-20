@@ -1,0 +1,304 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+	
+<link rel="canonical" href="https://www.robotis.com/index.php">
+
+<!-- 20181115 트위터카드 추가 -->
+<meta property="og:type" content="website">
+<meta name="keywords" content="자율주행로봇 전문기업, 서비스로봇 하드웨어 및 소프트웨어 솔루션 공급, ROBOTIS 집개미&일개미, DYNAMIXEL, 터틀봇3">
+<meta name="description" content="자율주행로봇 전문기업, 서비스로봇 하드웨어 및 소프트웨어 솔루션 공급, ROBOTIS 집개미&일개미, DYNAMIXEL, 터틀봇3">
+<meta property="og:url" content="https://www.robotis.com/">
+<meta property="og:title" content="ROBOTIS">
+<meta property="og:description" content="자율주행로봇 전문기업, 서비스로봇 하드웨어 및 소프트웨어 솔루션 공급, ROBOTIS 집개미&일개미, DYNAMIXEL, 터틀봇3">
+<meta property="og:image" content="http://www.robotis.com/img/common/robotis_og.png">
+
+<!-- 20181115 트위터카드 추가 끝 -->
+
+
+<!-- 20181115 트위터카드 추가 -->
+<meta name="twitter:card" content="photo" />
+<!--meta name="description" itemprop="description" content="자율주행로봇 전문기업, 서비스로봇 하드웨어 및 소프트웨어 솔루션 공급, ROBOTIS 집개미&일개미, DYNAMIXEL, 터틀봇3" />-->
+<!-- 20181115 트위터카드 추가 끝 -->
+
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:type" content="website" />
+<meta property="article:tag" content="ROBOTIS" />
+<meta property="og:site_name" content="로보티즈" />
+<meta property="article:section" content="ROBOTIS" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+
+
+<!-- 20181115 sitemap 추가 -->
+<link rel=contents href="sitemap.html">
+<meta name="sitemap" content="https://www.robitis.com/sitemap.xml" />
+<link rel="sitemap" type="application/rss+xml" href="www.robitis.rss" />
+<!-- 20181115 sitemap 추가 끝 -->
+
+
+<link rel="shortcut icon" type="image/x-icon" href="https://www.robotis.com/img/common/favicon_211001.ico">
+<link rel="icon" type="image/x-icon" href="https://www.robotis.com/img/common/favicon_211001.ico">
+
+
+
+<title>로보티즈</title>
+
+
+<link rel="stylesheet" href="https://www.robotis.com/css/default_shop.css?ver=20240215085142">
+<link rel="stylesheet" href="https://www.robotis.com/css/common.css?ver=20240215085142" >
+<link rel="stylesheet" href="https://www.robotis.com/css/sub.css?ver=20240215085142" >
+
+<link rel="stylesheet" href="https://www.robotis.com/css/button.css?ver=20240215085142">
+
+<!--[if lte IE 8]>
+<script src="https://www.robotis.com/js/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]><script src="https://www.robotis.com/js/html5shiv.min.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="https://www.robotis.com/js/respond.min.js"></script><![endif]-->
+
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://www.robotis.com";
+var g5_bbs_url   = "https://www.robotis.com/model";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+
+
+<!-- JQUERY -->
+<script src="https://www.robotis.com/js/jquery-1.12.2.min.js"></script>
+
+<!-- Calander -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Layer popup -->
+<script src="https://www.robotis.com/js/pop_app.js?ver=20240215085142" ></script>
+
+
+<!-- bxslider -->
+<link rel="stylesheet" href="https://www.robotis.com/css/bxslider/jquery.bxslider.css" >
+<script type="text/javascript" src="https://www.robotis.com/js/library/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="https://www.robotis.com/js/library/tweenmax/TweenMax.min.js"></script>
+<script type="text/javascript" src="https://www.robotis.com/js/library/bxslider/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<!-- slick -->
+<link rel="stylesheet" type="text/css" href="https://www.robotis.com/css/slick/slick.css?ver=20240215085142"/>
+<link rel="stylesheet" type="text/css" href="https://www.robotis.com/css/slick/slick-theme_main.css?ver=20240215085142"/>
+<script type="text/javascript" src="https://www.robotis.com/js/library/slick/slick.min.js?ver=20240215085142"></script> 
+
+<!-- jcarousellite -->
+<script type="text/javascript" src="https://www.robotis.com/js/jquery.jcarousellite.min.js"></script>
+
+
+<script src="https://www.robotis.com/js/jquery.menu.js?ver=20240215085142"></script>
+
+<script src="https://www.robotis.com/js/wrest.js?ver=20240215085142"></script>
+
+
+
+<!-- 사용자정의 -->
+<script type="text/javascript" src="https://www.robotis.com/js/common.js?ver=20240215085142"></script>
+<script type="text/javascript" src="https://www.robotis.com/js/main.js?ver=20240215085142"></script>
+
+
+<!-- Npay -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "s_35c9a83dfe7e";
+    wcs.inflow("robotis.com");
+</script>
+    <!-- 2023-11-20 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1034090759"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date()); gtag('config', 'AW-1034090759');
+    </script>
+    <!-- Event snippet for 페이지 조회 conversion page -->
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-1034090759/J_wJCMrXi_UYEIfyi-0D'});
+    </script>
+
+<!-- 20220808 페이스북 픽셀 설정 추가 Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1084558845793661');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1084558845793661&ev=PageView&noscript=1"
+    /></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+
+<body  >
+ 
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1;" charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+		<title>ROBOTIS</title>
+	</head>
+
+	<body>  
+
+		<style>
+
+			.downloadbox { background-color:#ffffff; margin:0;  } 
+
+			.downloadbox  .sub_inner { width:90%; max-width:700px; margin:0 auto;  }
+			.downloadbox  .sub_inner .tit { margin:0 auto; padding:30px 0 5px 0; font-size: 3em;  font-family: 'Nanum Gothic', 'sans-serif'; font-weight:bold; line-height:1.2em; }
+			.downloadbox  .sub_inner .desc { margin-bottom:20px; font-size: 1.5em; color:#6e4f42; font-family: 'Nanum Gothic', 'sans-serif';  }
+			.downloadbox  .sub_inner .subject { font-size: 2em;  border-bottom:1px solid #ded4c8; padding-bottom:5px; font-family: 'Nanum Gothic', 'sans-serif' ; }
+			.downloadbox  .sub_inner .bonmoon { font-size:1em; text-align:left; line-height:1.5em;  } 
+
+			.downloadbox .welcome_msg .welcome_img { float:left; width: 35%; }
+			.downloadbox .welcome_msg .welcome_img img { width: 80%; }
+			.downloadbox .welcome_msg .welcome_txt { float:left; width: 60%; box-sizing:border-box; padding:30px 0px;  text-align:left; }
+			.downloadbox .welcome_msg .welcome_txt .bonmoon_box  { clear:left; width:100%; padding: 0;  margin-top:20px; }
+
+			.downloadbox  .sub_inner .path_box {background-color:#f0f0f0; padding:20px; text-align:left; clear:both; }
+			.downloadbox  .sub_inner .path_box a { text-decoration:none;}
+
+			.downloadbox  .sub_inner .banner {width:100%;  }
+			.downloadbox  .sub_inner .banner img {width:100%; margin-top:80px;}
+
+
+		</style>
+
+
+		<div class="body_wrap downloadbox">  
+
+			
+				<div class="sub_inner center">  
+
+					<div class="welcome_msg">
+						<div class="welcome_img"><img src="https://www.robotis.com/img/common/download_20171016.jpg" ></div>
+						<div class="welcome_txt">
+							<span class="tit">ROBOTIS DOWNLOAD</span> 
+									
+							<div class="bonmoon_box">
+
+								
+									<span class="bonmoon">	
+										Your download will start shortly.<br />
+										Problems with the download?  Please use the direct link below.
+									</span>
+									</span>
+
+															</div>
+
+						</div>
+					</div>
+							
+					<div class="path_box">
+						Direct Link  : <a href="https://www.robotis.com/service/download.php?no=1671" target="_self">https://www.robotis.com/service/download.php?no=1671</a> <br>
+					</div>
+
+					<div class="banner">
+					
+													
+							
+								<img src="/data/banner/3731884498_du2hvjqm_d56db97174bd45ef2bffbf9ee821fbc61c40c2e9.jpg">
+
+												</div>
+					
+				</div>
+
+
+		</div>
+
+	</body>
+
+	
+	<script>
+
+		var httpCode = '200';
+
+		function sleep(num){	//[1/1000초]
+			var now = new Date();
+			var stop = now.getTime() + num;
+			while(true){
+				now = new Date();
+				 if(now.getTime() > stop)return;
+
+			}
+		}
+
+		function call_url(url){
+			sleep(2000);
+			location.href=url;
+		}
+
+		if(httpCode =="200" || httpCode =="302" || httpCode =="301"){ //성공
+			call_url('https://www.dropbox.com/s/csawv9qzl8m8e0d/DynamixelWizard2Setup-x86_64?dl=1');
+		}
+
+
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!--  2017년12월26일 변경 : ked -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83196341-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-83196341-1');
+	</script>
+
+
+	</html>
+
+
+�6�a��      e�Re�RF�T�e�R   ^    O^partitionKey=%28https%2Crobotis.com%29,:https://www.robotis.com/service/download.php?no=1671 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 14 Feb 2024 23:51:42 GMT
+Server: Apache/2.2.20 (Unix) mod_ssl/2.2.20 OpenSSL/1.0.1e-fips DAV/2 PHP/5.2.14
+X-Powered-By: PHP/5.2.14
+P3P: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+Expires: 0
+Last-Modified: Wed, 14 Feb 2024 23:51:42 GMT
+Cache-Control: pre-check=0, post-check=0, max-age=0
+Pragma: no-cache
+Content-Type: text/html; charset=utf-8
+ original-response-headers Date: Wed, 14 Feb 2024 23:51:42 GMT
+Server: Apache/2.2.20 (Unix) mod_ssl/2.2.20 OpenSSL/1.0.1e-fips DAV/2 PHP/5.2.14
+X-Powered-By: PHP/5.2.14
+P3P: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+Set-Cookie: PHPSESSID=2eb393ee6f7ba99b2dac37ededdcae5b; path=/
+Expires: 0
+Last-Modified: Wed, 14 Feb 2024 23:51:42 GMT
+Cache-Control: pre-check=0, post-check=0, max-age=0
+Pragma: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+ ctid 1 uncompressed-len 0 net-response-time-onstart 1683 net-response-time-onstop 1902   *-

@@ -1,0 +1,3 @@
+/home/redleader/opencv_tutorial/CMakeFiles/DisplayImage.dir
+/home/redleader/opencv_tutorial/CMakeFiles/edit_cache.dir
+/home/redleader/opencv_tutorial/CMakeFiles/rebuild_cache.dir

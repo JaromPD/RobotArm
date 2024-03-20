@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/redleader/Downloads/opencv.tar" added="2024-02-14T22:01:35.196022Z" modified="2024-02-14T22:01:35.196053Z" visited="2024-02-14T22:01:35.196028Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-02-14T22:01:35.196035Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/redleader/Downloads/camera.py" added="2024-02-14T22:23:08.909911Z" modified="2024-02-14T22:23:08.911199Z" visited="2024-02-14T22:23:08.909929Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-02-14T22:23:08.911172Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/redleader/Downloads/DynamixelWizard2Setup_x64" added="2024-02-14T23:52:01.143461Z" modified="2024-02-14T23:52:01.143482Z" visited="2024-02-14T23:52:01.143464Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-02-14T23:52:01.143472Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/redleader/Downloads/DynamixelWizard2Setup_x64(1)" added="2024-02-14T23:57:38.093611Z" modified="2024-02-14T23:57:38.093648Z" visited="2024-02-14T23:57:38.093621Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-02-14T23:57:38.093635Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/redleader/Downloads/united-kingdom-scotland-aberdeenshire-stonehaven-dunnottar-castle-great-britain-british-isles-colorful-sunrise-over-the-ruins-of-dunnottar-castle-along-the-scottish-coastline-luigi-vaccarella.jpg" added="2024-02-15T00:31:16.052827Z" modified="2024-02-15T00:31:16.052855Z" visited="2024-02-15T00:31:16.052830Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-02-15T00:31:16.052835Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/redleader/Downloads/my_id_robot.tar.gz" added="2024-02-15T19:26:19.264866Z" modified="2024-02-15T19:26:19.264922Z" visited="2024-02-15T19:26:19.264870Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-02-15T19:26:19.264893Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/redleader/Downloads/my_id_robot.tar" added="2024-02-15T21:28:49.103875Z" modified="2024-02-15T21:28:49.103914Z" visited="2024-02-15T21:28:49.103881Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2024-02-15T21:28:49.103893Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

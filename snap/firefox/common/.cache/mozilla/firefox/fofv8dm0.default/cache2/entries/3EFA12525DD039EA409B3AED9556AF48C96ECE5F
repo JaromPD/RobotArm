@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="canonical" href="https://www.robotis.com/index.php">
+    <title>로보티즈</title>
+    <meta name="description" content="자율주행로봇 전문기업, 서비스로봇 하드웨어 및 소프트웨어 솔루션 공급, ROBOTIS 집개미&일개미, DYNAMIXEL, 터틀봇3">
+    <meta name="keywords" content="자율주행로봇, 서비스로봇, 호텔로봇,  배송로봇, 다이나믹셀, 스마트액추에이터">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.robotis.com/">
+    <meta property="og:title" content="로보티즈">
+    <meta property="og:description" content="자율주행로봇 전문기업, 서비스로봇 하드웨어 및 소프트웨어 솔루션 공급, ROBOTIS 집개미&일개미, DYNAMIXEL, 터틀봇3">
+    <meta property="og:image" content="http://www.robotis.com/img/common/robotis_og.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.robotis.com/img/common/favicon_211001.ico">
+    <link rel="icon" type="image/x-icon" href="https://www.robotis.com/img/common/favicon_211001.ico">
+
+    <link rel="stylesheet" type="text/css" href="/new/css/main_2023.css" />
+    <meta name="format-detection" content="telephone=no">
+    <script src="/new/js/jquery-1.9.0.min.js"></script>
+
+    <!--슬-->
+    <link rel="stylesheet" type="text/css" href="/new/css/n_slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/new/css/n_slick/slick-theme.css?dt=20210930"/>
+    <script type="text/javascript" src="/new/js/library/n_slick/slick.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-83196341-17"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-83196341-17');
+    </script>-->
+
+    <!-- 2021-12-22 -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4ZY5GEC9L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K4ZY5GEC9L');
+    </script>
+
+
+
+    <!-- 202109 리뉴얼 추가 -->
+    <script src="/new/js/ace-responsive-menu.js" type="text/javascript"></script>
+    <link href="/new/css/ace-responsive-menu.css" rel="stylesheet" type="text/css" />
+    <!--Plugin Initialization-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#respMenu").aceResponsiveMenu({
+                resizeWidth: '883', // Set the same in Media query
+                animationSpeed: 'fast', //slow, medium, fast
+                accoridonExpAll: false //Expands all the accordion menu on click
+            });
+        });
+    </script>
+    <!-- 202109 리뉴얼 추가 끝-->
+
+</head>
+<body>
+
+
+
+
+<head>
+    <!-- 2023-11-20 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1034090759"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date()); gtag('config', 'AW-1034090759');
+    </script>
+    <!-- Event snippet for 페이지 조회 conversion page -->
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-1034090759/J_wJCMrXi_UYEIfyi-0D'});
+    </script>
+</head>
+<style>
+    .search_w {
+        position: absolute;
+        /*width: 200px;*/
+        right: 110px;
+        top: 2px;
+    }
+    /* 셀렉트 박스 CSS */
+    a {text-decoration:none;}
+    ol,ul { list-style: none; margin:0; padding:0;}
+    #top_btn {
+        position: absolute;
+        width: 100px;
+        right: 20px;
+        top: -3px;
+    }
+    .sticky #top_btn>li>a{color:black!important;}
+    #top_btn>li {position: relative; display: inline-block;}
+    #top_btn>li>a{display:block;width:100%;line-height:35px;font-weight:400; color:black;font-size:13px;padding:0 10px;box-sizing: border-box; -o-box-sizing: border-box;-ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+    .lang_list {top: 36px; left:0; width:100% !important;z-index:10000;display: none;padding: 0; }
+    .lang_list li a{display: block;font-weight: 300;font-size:13px;line-height: 28px;border:1px solid #666;border-bottom: none; background-color: #444;text-align: center; color:#ffffff; z-index:9999999}
+    .lang_list li a:hover {color: yellow;}
+
+    .popup { display:none; position:fixed; top:0px;  background-color:#ffffff;  z-index:1000; right:0px;}
+    .popup .popup_bar { width:100%; background-color:#c9d7e5; position:relative; top:0; border-radius:6px 6px 0 0; text-align:center; height:24px; cursor:move;  padding-top:10px; }
+    .popup .btn_close { float:right; cursor:pointer; padding-right:20px; }
+    .popup .popup_content { padding:10px; width:100%; text-align:center; }
+    .popup .div_tit { font-weight:bold; padding:5px; }
+    .popup .div_btn_line  {padding:5px; text-align: right; ;margin-top: 20px;}
+    .popup .popup_content .amt { border:0; color:#f6931f; font-weight:bold; }
+    .popup .popup_content .monitor { margin-bottom:20px;  text-align: left; font-weight:bold; }
+
+    input[type=text]:not(.search_txt) {
+        background-image: url(http://robotis.com/img/common/icon_search.png);
+        background-position: 8px center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        padding: 5px 5px;
+        text-indent: 30px;
+        width: 120px;
+    }
+
+    @media only screen and (min-width: 1450px) {
+        #popup_search {
+            display: none !important;
+        }
+    }
+    @media only screen and (max-width: 1450px) {
+        .search_w {
+            right: 110px;
+            top: 1px;
+            background-color: rgba(255, 255, 255, 0.93);
+            border-radius: 100%;
+            padding: 5px;
+        }
+        #searchBoxTop {
+            display:none;
+        }
+        #searchImgTop {
+            display:block !important;
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        .search_w {
+            right: 80px;
+            top : -1px;
+        }
+        #top_btn {
+            display: none;
+        }
+        .popup {
+            top:60px !important;
+        }
+    }
+
+    @media screen and (max-width:640px) {
+        .popup {
+            width:100% !important;
+        }
+    }
+
+</style>
+<script>
+    $(function(){
+        //언어선택
+        $("#top_btn>li.lang").click(function(){$(".lang_list").show();	});
+        $("#top_btn>li.lang").mouseenter(function(){$(".lang_list").show();	});
+        $("#top_btn>li.lang").mouseleave(function(){$(".lang_list").hide();	});
+
+    });
+</script>
+<header class="main_header">
+
+
+    <div class="row">
+        <div class="content">
+            <nav>
+                <a class="logo" href="https://www.robotis.com/" style="z-index:10"><img src="/new/img/main/main_logo.png" alt="로보티즈 로고" ></a>
+                <!-- Menu Toggle btn-->
+                <div class="menu-toggle">
+                    <button type="button" id="menu-btn" onclick="searchClose();">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </button>
+                </div>
+                <!-- Responsive Menu Structure-->
+                <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+                <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                    <li>
+                        <a href="/sub/about_ceo.php" class="sub_top"><span class="title ">인사말</span></a>
+                    </li>
+                    <li>
+                        <a href="/sub/business_renewal.php" class="sub_top"><span class="title">사업분야</span></a>
+                    </li>
+
+                    <li>
+                        <a href="/sub/media_release.php" class="sub_top"><span class="title">미디어/IR</span></a>
+                    </li>
+
+                    <li>
+                        <a href="/sub/recurit.php" class="sub_top"><span class="title">채용</span></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.robotis.com/shop/" target="_blank" class="sub_top"><span class="title">쇼핑몰</span></a>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);" class="sub_top"><span class="title">고객지원</span> </a>
+                        <ul>
+                            <li>
+                                <a href="https://emanual.robotis.com/docs/kr/" target="_blank">e-매뉴얼</a>
+                            </li>
+                            <li>
+                                <a href="https://www.robotis.com/service/downloadcenter.php"  target="_blank">다운로드</a>
+                            </li>
+                            <li>
+                                <a href="https://www.robotis.com/model/board.php?bo_table=tutorial_vod"  target="_blank">튜토리얼</a>
+                            </li>
+                            <li>
+                                <!--a href="https://www.robotis.com/service/forum.php"  target="_blank">기술포럼</a>-->
+                                <a href="https://forum.robotis.com/c/community/kr/68"  target="_blank">기술포럼</a>
+                            </li>
+                            <li>
+                                <a href="https://www.robotis.com/model/selfcheck.php" target="_blank">자가진단</a>
+                            </li>
+                            <li>
+                                <a href="https://www.robotis.com/shop/rma.php" target="_blank">AS신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/sub/about_contact.php" class="sub_top"><span class="title">오시는 길</span></a>
+                    </li>
+                    <li>
+                        <div class="lang_m dis_mob ">
+                            <select id="lang_m"  onchange="gotoHomepage(this.value);">
+                                <option value="#" data-image="/new/img/main/ico_lang.png" data-title="korea">한국어</option>
+                                <option value="http://en.robotis.com/" data-image="/new/img/main/ico_lang.png" data-title="English">English</option>
+                                <option value="http://jp.robotis.com/" data-image="/new/img/main/ico_lang.png" data-title="japan">日本語</option>
+                                <option value="http://cn.robotis.com/" data-image="/new/img/main/ico_lang.png" data-title="china">中文</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="top_btn">
+                    <li class="lang" style="width:100%;">
+                        <a href="#" title="lang">한국어 ▼</a>
+                        <ul class="lang_list">
+                            <!--li><a href="https://www.robotis.com/" title="korea">한국어</a></li>-->
+                            <li><a href="http://en.robotis.com/" title="English">English</a></li>
+                            <li><a href="http://cn.robotis.com/" title="中文" >中文</a></li>
+                            <li><a href="http://jp.robotis.com/" title="日本語" >日本語</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search_w">
+                    <input type="image" id="searchImgTop" src="//robotis.com/img/common/icon_search.png" style="vertical-align: middle;display:none;" onclick="searchOpen()" title="search">
+                    <fieldset id="searchBoxTop">
+                        <form name="fsearchbox" method="get" action="https://robotis.com/model/search.php" style="text-align: right;" onsubmit="return fsearchbox_submit(this);">
+                            <input type="hidden" name="sfl" value="wr_subject||wr_content">
+                            <input type="hidden" name="sop" value="and">
+                            <input type="text" name="stx" class="search_box_top" maxlength="20" placeholder=" search" title="search">
+                        </form>
+                    </fieldset>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="popup_search" class="popup" style="top: 90px; width: 250px; height: 50px;  z-index:-5; display: none;min-width:245px;">
+        <div class="popup_content">
+            <div class="popup_inner">
+                <div style="text-align:center;">
+                    <form name="fsearchbox2" method="get" action="https://robotis.com/model/search.php" onsubmit="return fsearchbox_submit(this);">
+                        <input type="hidden" name="sfl" value="wr_subject||wr_content">
+                        <input type="hidden" name="sop" value="and">
+                        <input type="text" name="stx" id="stx2" class="search_box_top" maxlength="20" style="padding: 5px;width:60%;min-width:100px;" placeholder=" search">&nbsp;
+                        <img src="//www.robotis.com/img/common/btn_close_x.gif" onclick="javascript: searchClose();" style="cursor:pointer;float: right;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+    function gotoHomepage(url){
+        location.href = url;
+    }
+    function searchOpen(){
+        $("#stx2").val('');
+        if($('#respMenu').css('display') == 'block'){
+            $('#menu-btn').click();
+        }
+        $('#popup_search').show();
+        $('#stx2').focus();
+    }
+    function searchClose(){
+        $("#stx2").val('');
+        $("#popup_search").hide();
+    }
+</script>
+
+
+<div>
+
+    <div class="dis_mob main_v_txt" style=""><p>The study of human experiences, </p><p style="margin-top: 10px;"><img src="new/img/main/main_white_logo.png" ></p></div>
+    <!-- 메 -->
+    <div class="section dis_web " id="section0">
+        <div class="intro">
+            <div class="m_dyd" >
+                <div class="m_logo">The study of human</div>
+            </div>
+            <div class="m_autobot">
+                <div class="txt"><span>experiences,</span>&nbsp;<span><img src="/new/img/main/logo_m_v.png" alt="ROBOTIS"></span></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="section" id="sec_zip">
+        <div class="info zip_con_area">
+            <div class="movie">
+                <!--iframe src="https://www.youtube.com/embed/b3PA74WRJm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <!--iframe src="https://www.youtube.com/embed/bCCLThxRdso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <!--                <iframe src="https://www.youtube.com/embed/6leVDb6EHi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <iframe src="https://www.youtube.com/embed/dAw6XJjbeS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="con">
+                <div class="title"><img src="new/img/main/sec_zip_title_v2023.png" style="max-width:532px"></div>
+                <div class="txt white">로보티즈 집개미는 호텔, 리조트, 고층 빌딩 등 광역 서비스 공간에서 물품배송 서비스를 제공하는 실내자율주행로봇으로서 로봇팔이 장착 되어있어 활동 공간 내의 시설변경 필요없이 간편하게 배송서비스를 제공합니다.</div>
+                <div class="btn_w"><a href="/sub/business_zip.php">Detail View</a></div>
+            </div>
+        </div>
+        <div class="items_zip_new">
+            <picture>
+                <source srcset="new/img/main/sec_zip_main_231204.webp" type="image/webp" />
+                <img src="new/img/main/sec_zip_main_231204.png">
+            </picture>
+        </div>
+    </div>
+
+
+    <div class="section flex_reverse" id="sec_012">
+        <div class="info o12_con_area">
+            <div class="movie">
+<!--                <iframe width="326" height="200" src="https://www.youtube.com/embed/uKJuNQBwR3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <iframe width="326" height="200" src="https://www.youtube.com/embed/Rbf1_C01xL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="con">
+                <div class="title"><img src="new/img/main/sec_zip_title_v2023.png" style="max-width:532px"></div>
+                <div class="txt white">로보티즈 일개미는 택배, 음식배송 서비스를 제공하는 실외자율주행로봇으로서 딥러닝 AI 기반으로 주변환경과 장애물을 감지하고 스스로 판단하여 작동됩니다.</div>
+                <div class="btn_w"><a href="/sub/business_012.php">Detail View</a></div>
+            </div>
+        </div>
+        <div class="items_012"><img src="new/img/main/main_gaemi_outdoor.png"></div>
+    </div>
+
+
+
+    <div class="section" id="sec_dxl">
+        <div class="info">
+            <div class="movie">
+                <iframe width="326" height="200" src="https://www.youtube.com/embed/BacI9VXGTOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="con">
+                <div class="title"><img src="new/img/main/sec_dxl_title.png"></div>
+                <div class="txt white">다이나믹셀은 모터, 감속기, 제어기, 통신부가 일체화된 모듈형 구동장치로서, 로봇관절을 손쉽게 구성할 수 있고 네트워크를 통해 시스템을 효율적으로 제어할 수 있는 로봇 액츄에이터입니다.</div>
+                <div class="btn_w"><a href="https://www.dynamixel.com/whatisdxl.php" target="_blank">Detail View</a></div>
+            </div>
+        </div>
+        <!--		<div class="items_dxl dis_web"><img src="new/img/main/sec_dxl_img.png"></div>-->
+        <div class="items_dxl">
+            <picture>
+                <source srcset="new/img/main/sec_dxl_img_m_231204.webp" type="image/webp" />
+                <img src="new/img/main/sec_dxl_img_m_231204.png">
+            </picture>
+        </div>
+    </div>
+
+
+
+    <div class="section  flex_reverse" id="sec_dyd">
+        <div class="info">
+            <div class="movie">
+                <!--iframe src="https://www.youtube.com/embed/G4zqq5lcRM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                <!-- 220811 영상교체 요청 -->
+                <iframe src="https://www.youtube.com/embed/qKrB2ybDFp8?rel=0&autoplay=1&mute=1&playlist=qKrB2ybDFp8&loop=1&controls=0" frameborder="0"></iframe>
+            </div>
+            <div class="con">
+                <div class="title"><img src="new/img/main/sec_dyd_title.png"></div>
+                <div class="txt black">다이나믹셀 드라이브(DYD)는 사이클로이드 치형의 초정밀 박형 감속기로서, 하모닉 감속기에 비해 소형,경량이고 내충격성이 월등히 뛰어납니다. </div>
+                <div class="btn_b"><a href="https://www.dynamixel.com/list.php?dxl=y" target="_blank">Detail View</a></div>
+            </div>
+        </div>
+        <div class="items_dyd">
+            <picture>
+                <source srcset="new/img/main/sec_dyd_img_231204.webp?v=1" type="image/webp" />
+                <img src="new/img/main/sec_dyd_img_231204.png?v=1">
+            </picture>
+        </div>
+    </div>
+
+
+    <!-- 미디 -->
+    <div class="section" id="section1">
+        <div class="media">
+            <div>
+                <!--h1 class="white"><span>Business</span><span style="font-size: 36px; font-weight: 100; ">&nbsp;/&nbsp;</span><span>Media</span></h1-->
+                <!--h2>Global Service Robot Solution Provider!</h2-->
+            </div>
+
+            <div  class="b_m_wrap">
+
+
+                <div class="b_m_box">
+                    <div  class="ir_tit">Business</div>
+                    <div class="business_list">
+
+
+                        <!--
+                                                <div onClick="location.href='sub/business_auto.php'" style="cursor: pointer;">
+                                                    <div class="con_l">
+                                                        <p><img src="/new/img/main/business_thumb_autobot_n2.png" alt="자율주행로봇"></p>
+                                                    </div>
+                                                    <div class="con_r">
+                                                        <p class="list_title1">자율주행 사업분야</p>
+                                                        <p class="list_subscript">스마트시티의 모빌리티를 지향하는 로보티즈 자율주행로봇</p>
+                                                    </div>
+                                                </div>
+
+                                                <div onClick="location.href='sub/business_dxl.php'" style="cursor: pointer;">
+                                                    <div class="con_l">
+                                                        <p><img src="/new/img/main/business_thumb_dxl_n2.png" alt="자율주행로봇"></p>
+                                                    </div>
+                                                    <div class="con_r">
+                                                        <p class="list_title1">액츄에이터 및 그 응용분야</p>
+                                                        <p class="list_subscript">다이나믹셀이라는 로봇전용 액츄에이터와 ROS 및 A.I.를 기반으로 하는 소프트웨어를 통해 서비스 로봇 구축에 필요한 솔루션을 제공합니다.</p>
+                                                    </div>
+                                                </div>
+                        -->
+
+
+                        <div onClick="location.href='sub/business_zip.php'" style="cursor: pointer;">
+                            <div class="con_l">
+                                <p>
+                                    <picture>
+                                        <source srcset="/new/img/main/business_thumb_zip_new_231204.webp" type="image/webp" />
+                                        <img src="/new/img/main/business_thumb_zip_new_231204.png" alt="자율주행로봇">
+                                    </picture>
+                                </p>
+                            </div>
+                            <div class="con_r">
+                                <p class="list_title1">실내자율주행로봇</p>
+                                <p class="list_subscript">호텔, 리조트, 고층 빌딩 등 광역 서비스 공간에서 물품배송 서비스를 제공하는 실내자율주행로봇으로서 로봇팔이 장착 되어있어 활동 공간 내의 시설변경 필요없이 간편하게 배송서비스를 제공합니다.</p>
+                            </div>
+                        </div>
+
+                        <div onClick="location.href='sub/business_012.php'" style="cursor: pointer;">
+                            <div class="con_l">
+                                <p>
+                                    <picture>
+                                        <source srcset="/new/img/main/business_thumb_zip_new_outdoor_231204.webp" type="image/webp" />
+                                        <img src="/new/img/main/business_thumb_zip_new_outdoor_231204.png" alt="자율주행로봇">
+                                    </picture>
+                                </p>
+                            </div>
+                            <div class="con_r">
+                                <p class="list_title1">실외자율주행로봇(라스트 마일 배송로봇)</p>
+                                <p class="list_subscript">택배, 음식배송 서비스를 제공하는 실외자율주행로봇으로서 딥러닝 AI 기반으로 주변환경과 장애물을 감지하고 스스로 판단하여 작동됩니다.</p>
+                            </div>
+                        </div>
+
+                        <div onClick="window.open('https://www.dynamixel.com/whatisdxl.php')" style="cursor: pointer;">
+                            <div class="con_l">
+                                <p><img src="/new/img/main/business_thumb_dxl2.png" alt="자율주행로봇"></p>
+                            </div>
+                            <div class="con_r">
+                                <p class="list_title1">로봇 액츄에이터 부품과 지능형 소프트웨어</p>
+                                <p class="list_subscript">모터, 감속기, 제어기, 통신부가 일체화된 모듈형 구동장치로서, 로봇관절을 손쉽게 구성할 수 있고 네트워크를 통해 시스템을 효율적으로 제어할 수 있는 로봇 액츄에이터입니다.</p>
+                            </div>
+                        </div>
+
+                        <div onClick="window.open('https://www.dynamixel.com/list.php?dxl=y')"  style="cursor: pointer;">
+                            <div class="con_l">
+                                <p><img src="/new/img/main/business_thumb_dyd.png?v=2" alt="자율주행로봇"></p>
+                            </div>
+                            <div class="con_r">
+                                <p class="list_title1">사이클로이드 감속기</p>
+                                <p class="list_subscript">사이클로이드 치형의 초정밀 박형 감속기로서, 하모닉 감속기에 비해 소형,경량이고 내충격성이 월등히 뛰어납니다.</p>
+                            </div>
+                        </div>
+
+
+                        <!--
+                                                <div onClick="location.href='sub/business_platform.php'" style="cursor: pointer;">
+                                                    <div class="con_l">
+                                                        <p><img src="/new/img/main/business_thumb_osr.png" alt="자율주행로봇"></p>
+                                                    </div>
+                                                    <div class="con_r">
+                                                        <p class="list_title1">오픈 소스 로봇</p>
+                                                        <p class="list_subscript">로봇 연구자 및 개발자들이 만들고자 하는 로봇을 구현할 수 있는 시스템을 제공하는 것을 중요한 가치로 생각하며, 플랫폼 프로바이더를 지향합니다.</p>
+                                                    </div>
+                                                </div>
+
+                        -->
+
+                    </div>
+                    <script>
+                        $('.business_list').slick({
+                            dots: true,
+                            infinite: true,
+                            autoplay: true,
+                            autoplaySpeed: 2000,
+                            speed: 300,
+                            arrows:false,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            responsive: [
+                                {
+                                    breakpoint: 980,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                        dots: true,
+                                        arrows:false,
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        arrows:false,
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        arrows:false,
+                                    }
+                                }
+                                // You can unslick at a given breakpoint now by adding:
+                                // settings: "unslick"
+                                // instead of a settings object
+                            ]
+                        });
+                    </script>
+                </div>
+
+
+                <div  class="b_m_box">
+                    <div class="more" onClick="location.href='sub/media_release.php'" style="cursor: pointer;">+</div>
+                    <div class="ir_tit">Media</div>
+                                            <div class="media_list_box  clearfix"  onClick="location.href='/sub/media_release_view.php?wr_id=554'" style="cursor: pointer;">
+                            <div class="con_l">
+                                <div class="media_name">한국경제</div>
+                                <div class="media_thumb" style="background-image:url(https://www.robotis.com/data/editor/2308/thumb-84c0e7babd84b1c8cf1404a2a1ed840d_1692840277_32.jpg) "><img src="/new/img/main/thumb_285x179.png"  alt="&#034;국내외 호텔 문의 쇄도&#034;…로봇 덕후가 만든 '개미'의 정체"></div>
+                            </div>
+                            <div class="con_r">
+                                <p class="list_title1">&#034;국내외 호텔 문의 쇄도&#034;…로봇 덕후가 만든 '개미'의 정체</p>
+                                <p class="list_subscript ">"우리 회사는 로봇이 간식 배달해줘요"&nbsp;코스닥상장사 로보티즈 김병수 대표 인터뷰자율주행로봇에 팔 달려 층간 이동 자유로워아난티호텔 등 국내외 호텔 문의 쇄도&nbsp;지난...</p>
+                            </div>
+                        </div>
+                                        </div>
+
+
+                <div  class="b_m_box">
+                    <div class="ir_tit">Social</div>
+                    <div class="con_l">
+                        <div class="media_movie_box">
+                            <iframe src="https://www.youtube.com/embed/6cJCrfBFzqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="con_r">
+                        <p class="list_title2">This Robot is Awesome for Social Distancing Duri...</p>
+                        <p class="list_subscript">Q. What will you order if the robot can deliver your food during the coronavirus pandemic? </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--div class="media_list_wrap" >
+
+				<div class="media_ir_box dis_web">
+					<div class="more" onClick="location.href='sub/media_ir.php'" style="cursor: pointer;">+</div>
+					<div class="ir_tit">공시정보</div>
+
+                                            <div  class="line01"  onClick="location.href='/new/sub/media_ir_view.php?wr_id=9'" style="cursor: pointer;">
+                            <p class="ir_txt">임원ㆍ주요주주특정증권등소유상황보고서</p>
+                            <p class="media_date2">2020.08.11</p>
+                        </div>
+                                                <div  class=""  onClick="location.href='/new/sub/media_ir_view.php?wr_id=8'" style="cursor: pointer;">
+                            <p class="ir_txt">신탁계약해지결과보고서</p>
+                            <p class="media_date2">2020.08.11</p>
+                        </div>
+                        				</div>
+			</div>
+			<div class="media_list_wrap2" >
+				<div class="media_movie_box">
+					<iframe src="https://www.youtube.com/embed/6cJCrfBFzqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="media_movie_box">
+					<iframe src="This Robot is Awesome for Social Distancing During the COVID-19 Pandemic. Highly Recommended." frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div-->
+            <div class="sc_dw">
+                <img src="/new/img/main/ico_mouse_w.png" alt="scroll down">
+                <p class="white m_t_10">Scroll Down</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- notice -->
+    <div class="section" id="section2">
+        <div class="notice">
+            <div>
+                <h1>Notice</h1>
+                <!--h2>Global Service Robot Solution Provider!</h2-->
+            </div>
+            <div class="notice_list_wrap" >
+                                    <div class="notice_list_box " onClick="location.href='/sub/media_notice_view.php?wr_id=1833528'" style="cursor: pointer;">
+                        <p class="notice_tit">주주명부폐쇄기간 또는 기준일 설정</p>
+                        <p class="notice_txt dis_web">주주명부폐쇄기간 또는 기준일 설정1. 기준일2023-12-312. 명의개서정지기간-시작일2024-01-01-종료일2024-01-313. 설정사유...</p>
+                        <p class="notice_date">2023.12.15</p>
+                    </div>
+                                        <div class="notice_list_box " onClick="location.href='/sub/media_notice_view.php?wr_id=1833527'" style="cursor: pointer;">
+                        <p class="notice_tit">임시주주총회 소집공고 안내의 건</p>
+                        <p class="notice_txt dis_web">주주총회 소집공고(임시)&nbsp;&nbsp;주주님의 건승과 댁내의 평안을 기원합니다.&nbsp;우리 회사는 정관 제24조에 의하여 임시주주총회...</p>
+                        <p class="notice_date">2023.10.06</p>
+                    </div>
+                                        <div class="notice_list_box " onClick="location.href='/sub/media_notice_view.php?wr_id=1833526'" style="cursor: pointer;">
+                        <p class="notice_tit">임시주주총회 기준일 설정공고</p>
+                        <p class="notice_txt dis_web">&nbsp;본 회사는 임시주주총회(2023년 10월 23일 예정)에서 의결권을 행사할 수 있는 주주를 확정하기 위하여,상법 제354조 및 당사 ...</p>
+                        <p class="notice_date">2023.09.05</p>
+                    </div>
+                                        <div class="notice_list_box dis_web" onClick="location.href='/sub/media_notice_view.php?wr_id=1833525'" style="cursor: pointer;">
+                        <p class="notice_tit">로보티즈 제24기 사업보고서 및 감사보고서 공지의 ...</p>
+                        <p class="notice_txt dis_web">안녕하세요.&nbsp;&nbsp;로보티즈 제24기 사업보고서 및 감사보고서 공지드리오니, 자세한 사항은 첨부파일을 참고해주시기 바랍니다.&nbs...</p>
+                        <p class="notice_date">2023.03.20</p>
+                    </div>
+                                </div>
+            <div class="notice_list_wrap2" >
+                <div class="notice_bn_box">
+                    <a href="https://robotis.com/sub/business_platform.php"><img src="/new/img/main/bn_osr.png"></a>
+                </div>
+                <div class="notice_bn_box">
+                    <!--a href="http://kidslab.robotis.com/" target="_blank"><img src="/new/img/main/bn_kidslab.png"></a>-->
+                    <a href="http://www.steamcup.org/ko/" target="_blank"><img src="/new/img/main/bn_kidslab_new.png"></a>
+                </div>
+            </div>
+            <div class="sc_dw">
+                <img src="/new/img/main/ico_mouse.png" alt="scroll down">
+                <p class="m_t_10">Scroll Down</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- contact -->
+    <div class="section" id="section3">
+        <div class="contact">
+            <div>
+                <h1 class="white m_t_50">Contact</h1>
+                <!--h2>Global Service Robot Solution Provider!</h2-->
+            </div>
+            <div class="contact_mail">
+                <input type="hidden" name="mail_token" id="mail_token" value="684280210ddbd97b664b5f7a38a8225d">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th width="15%">Name</th>
+                        <td><input id="email_name" name="email_name" style="width: 100%; border: 1px solid #333; background-color: #fff; padding: 7px;"></td>
+                    </tr>
+                    <tr>
+                        <th>E-mail</th>
+                        <td><input id="email_email" name="email_email" style="width: 100%; border: 1px solid #333; background-color: #fff; padding: 7px;"></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td><textarea id="email_context" name="email_context" style="width: 100%; height: 200px; border: 1px solid #333; background-color: #fff; padding: 7px;" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <a href="javascript:void(0)" onclick="send_main_email();" style="width: 100%; background-color: #2a2a2a; display: block; text-align: center; font-size: 14px; color: #fff; padding: 10px; font-weight: 900; margin-top: -5px" id="mailBtn">Submit</a>
+                            <div id="mailIng" style="display: none;text-align: center;font-weight:bold;">Sending mail. Please wait a moment.</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="m_bottom " id="layout_bottom">
+    <div class="bottom_wrap clearfix" >
+        <div class="logo"><img src="/new/img/main/bottom_logo.png" alt="ROBOTIS"></div>
+        <div class="add">서울 강서구 마곡중앙5로1길 37 (우편번호: 07594)<br>
+            E-mail : korea@robotis.com Tel : 070-8671-2600 Fax : 070-8230-1336<br>
+            사업자번호 : 209-81-22390 통신판매신고번호 : 제2018-서울강서-1400호</div>
+        <div  class="sns">
+            <a href="https://www.facebook.com/robotis.kor/" target="_blank"><img src="/new/img/main/sns_icon_facebook.png" alt="robotis facebook"></a>
+            <a href="https://github.com/robotis-git" target="_blank"><img src="/new/img/main/sns_icon_github.png" alt="robotis github"></a>
+            <a href="https://twitter.com/ROBOTIS" target="_blank"><img src="/new/img/main/sns_icon_twitter.png" alt="robotis twitter"></a>
+            <a href="https://www.youtube.com/user/ROBOTISCHANNEL/" target="_blank"><img src="/new/img/main/sns_icon_youtube.png" alt="robotis youtube"></a>
+            <a href="https://www.linkedin.com/company/robotis/" target="_blank"><img src="/new/img/main/sns_icon_linkedin.png" alt="robotis ilnkedin"></a>
+            <a href="https://www.instagram.com/robotis_global/" target="_blank"><img src="/new/img/main/sns_icon_instagram.png" alt="robotis instagram"></a>
+            <a href="https://blog.naver.com/robotismaker" target="_blank"><img src="/new/img/main/sns_icon_blog_g.png" alt="robotis blog"></a>
+        </div>
+        <div class="family">
+            <select id="family" onchange="window.open(value,'_blank');">
+                <option value="" selected disabled hidden>Family Site</option>
+                <option value="https://www.dynamixel.com/" data-title="dynamixel">Dynamixel</option>
+                <option value="https://www.robotis.com/subindex/kidslab.php"  data-title="kidslab">Kidslabs</option>
+            </select>
+        </div>
+    </div>
+</div>    </div>
+</div>
+
+
+
+<script type="text/javascript" src="/new/js/fullpage.js"></script>
+
+<script type="text/javascript">
+        // 모바일이 아닐때
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage'],
+        sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
+        scrollBar: true,
+        responsiveWidth: 760,
+        licenseKey: 'D1BDFA48-AB0840C8-B41628D8-909105C6',
+    });
+    // //모바일이 아닐때
+    
+
+
+    // Sticky Header
+    $(window).scroll(function() {
+
+        if ($(window).scrollTop() > 100) {
+            $('.main_header').addClass('sticky');
+        } else {
+            $('.main_header').removeClass('sticky');
+        }
+    });
+
+
+
+
+    // Mobile Navigation
+    $('.mobile-toggle').click(function() {
+        if ($('.main_header').hasClass('open-nav')) {
+            $('.main_header').removeClass('open-nav');
+        } else {
+            $('.main_header').addClass('open-nav');
+        }
+    });
+
+    $('.main_header li a').click(function() {
+        if ($('.main_header').hasClass('open-nav')) {
+            $('.navigation').removeClass('open-nav');
+            $('.main_header').removeClass('open-nav');
+        }
+    });
+
+    // navigation scroll lijepo radi materem
+    /*$('nav a').click(function(event) {
+        var id = $(this).attr("href");
+        var offset = 70;
+        var target = $(id).offset().top - offset;
+        $('html, body').animate({
+            scrollTop: target
+        }, 500);
+        event.preventDefault();
+    });*/
+
+
+    function send_main_email() {
+        let email_name = $('#email_name').val();
+        let email_email = $('#email_email').val();
+        let email_context = $('#email_context').val();
+        let mail_token = $('#mail_token').val();
+
+        if(email_name == '') {
+            alert('이름을 입력해주세요.');
+            return false;
+        }
+
+        if(email_email == '') {
+            alert('메일을 입력해주세요.');
+            return false;
+        }
+
+        if(email_context == '') {
+            alert('내용을 입력해주세요.');
+            return false;
+        }
+
+        let ajax_url = "./ajax.mail_send.php";
+        let ajax_data = "email_name=" + email_name;
+        ajax_data += "&email_email=" + email_email;
+        ajax_data += "&email_context=" + email_context;
+        ajax_data += "&mail_token=" + mail_token;
+
+        $("#mailBtn").hide();
+        $("#mailIng").show();
+
+        $.ajax({
+            type: "POST",
+            url: ajax_url,
+            data : ajax_data,
+            dataType: 'jsonp',
+            jsonpCallback: "callback",
+            success: function (jsonData) {
+                console.log(jsonData);
+                if(jsonData.code=="000") {
+                    alert('메일을 보냈습니다.');
+                } else if(jsonData.code == "100") {
+                    alert('토큰 정보가 올바르지 않습니다. 새로고침 후 다시 시도해주세요.');
+                } else if(jsonData.code == "300") {
+                    alert('이메일 주소를 확인해주세요.');
+                }else{
+                    alert('적용실패');
+                }
+                $("#mailBtn").show();
+                $("#mailIng").hide();
+            },
+            error:function(request, status, error){
+                console.log(error);
+                alert('메일 발송에 실패했습니다.');
+            }
+        });
+    }
+
+    export function detectWebpSupport() {
+        const image = new Image();
+        const webpDataURL = "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=";
+
+        const callback = (event) => {
+            const isWebPSupported = event?.type === "load" && image.width === 1;
+
+            if (isWebPSupported) {
+                document.body.classList.add("webp");
+                document.body.classList.remove("no-webp");
+            } else {
+                document.body.classList.add("no-webp");
+                document.body.classList.remove("webp");
+            }
+        };
+
+        image.onerror = callback;
+        image.onload = callback;
+        image.src = webpDataURL;
+    }
+
+    // 호출하여 WebP 지원 여부를 감지
+    detectWebpSupport();
+</script>
+</body>
+</html>*�_�/D      e�R�e�R�F�Ue�R�   B    O^partitionKey=%28https%2Crobotis.com%29,:https://www.robotis.com/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 14 Feb 2024 23:54:17 GMT
+Server: Apache/2.2.20 (Unix) mod_ssl/2.2.20 OpenSSL/1.0.1e-fips DAV/2 PHP/5.2.14
+X-Powered-By: PHP/5.2.14
+P3P: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+Expires: 0
+Last-Modified: Wed, 14 Feb 2024 23:54:17 GMT
+Cache-Control: pre-check=0, post-check=0, max-age=0
+Pragma: no-cache
+Content-Type: text/html; charset=utf-8
+ original-response-headers Date: Wed, 14 Feb 2024 23:54:17 GMT
+Server: Apache/2.2.20 (Unix) mod_ssl/2.2.20 OpenSSL/1.0.1e-fips DAV/2 PHP/5.2.14
+X-Powered-By: PHP/5.2.14
+P3P: CP="ALL CURa ADMa DEVa TAIa OUR BUS IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC OTC"
+Expires: 0
+Last-Modified: Wed, 14 Feb 2024 23:54:17 GMT
+Cache-Control: pre-check=0, post-check=0, max-age=0
+Pragma: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=utf-8
+ ctid 1 uncompressed-len 0 net-response-time-onstart 861 net-response-time-onstop 1132   �"

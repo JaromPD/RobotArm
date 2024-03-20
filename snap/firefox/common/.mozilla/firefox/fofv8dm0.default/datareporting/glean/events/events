@@ -1,0 +1,14 @@
+{"timestamp":712716,"category":"fog.validation","name":"validate_early_event"}
+{"timestamp":726784,"category":"webcompatreporting","name":"reason_dropdown","extra":{"setting":"required"}}
+{"timestamp":748696,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","experiment":"release-experiment-for-additional-metrics-for-product-insights-rollout"}}
+{"timestamp":749709,"category":"nimbus_events","name":"enroll_failed","extra":{"experiment":"spocs-endpoint-rollout-release","reason":"feature-conflict"}}
+{"timestamp":751043,"category":"nimbus_events","name":"enroll_failed","extra":{"experiment":"pxi-toolbar-default-visibility-rollout","reason":"feature-conflict"}}
+{"timestamp":751865,"category":"nimbus_events","name":"is_ready"}
+{"timestamp":761042,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","experiment":"release-experiment-for-additional-metrics-for-product-insights-rollout"}}
+{"timestamp":761518,"category":"nimbus_events","name":"enroll_failed","extra":{"reason":"feature-conflict","experiment":"spocs-endpoint-rollout-release"}}
+{"timestamp":762709,"category":"nimbus_events","name":"enroll_failed","extra":{"experiment":"pxi-toolbar-default-visibility-rollout","reason":"feature-conflict"}}
+{"timestamp":764705,"category":"nimbus_events","name":"is_ready"}
+{"timestamp":791445,"category":"urlbar","name":"engagement","extra":{"engagement_type":"enter","interaction":"typed","n_chars":"6","search_engine_default_id":"google-ubuntu-sn","sap":"urlbar_newtab","results":"search_engine,top_site,top_site,top_site,top_site,top_site","n_words":"1","groups":"heuristic,top_site,top_site,top_site,top_site,top_site","selected_result_subtype":"","selected_result":"search_engine","search_mode":"","provider":"HeuristicFallback","selected_position":"1","n_results":"6"}}
+{"timestamp":798300,"category":"serp","name":"impression","extra":{"impression_id":"7a1d380a-a6b1-46a4-8168-d3c6b44f86d2","shopping_tab_displayed":"false","partner_code":"ubuntu-sn","source":"urlbar","provider":"google","tagged":"true","is_private":"false","is_shopping_page":"false"}}
+{"timestamp":799654,"category":"serp","name":"ad_impression","extra":{"impression_id":"7a1d380a-a6b1-46a4-8168-d3c6b44f86d2","ads_visible":"1","component":"ad_link","ads_loaded":"1","ads_hidden":"0"}}
+{"timestamp":807670,"category":"serp","name":"engagement","extra":{"target":"ad_link","action":"clicked","impression_id":"7a1d380a-a6b1-46a4-8168-d3c6b44f86d2"}}

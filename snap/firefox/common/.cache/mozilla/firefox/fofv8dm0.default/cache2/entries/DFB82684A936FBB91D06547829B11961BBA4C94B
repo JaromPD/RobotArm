@@ -1,0 +1,387 @@
+var wrestMsg = "";
+var wrestFld = null;
+var wrestFldDefaultColor = "";
+//var wrestFldBackColor = "#ff3061";
+
+// subject 속성값을 얻어 return, 없으면 tag의 name을 넘김
+function wrestItemname(fld)
+{
+    //return fld.getAttribute("title") ? fld.getAttribute("title") : ( fld.getAttribute("alt") ? fld.getAttribute("alt") : fld.name );
+    var id = fld.getAttribute("id");
+    var labels = document.getElementsByTagName("label");
+    var el = null;
+
+    for(i=0; i<labels.length; i++) {
+        if(id == labels[i].htmlFor) {
+            el = labels[i];
+            break;
+        }
+    }
+
+    if(el != null) {
+        var text =  el.innerHTML.replace(/[<].*[>].*[<]\/+.*[>]/gi, "");
+
+        if(text == '') {
+            return fld.getAttribute("title") ? fld.getAttribute("title") : ( fld.getAttribute("placeholder") ? fld.getAttribute("placeholder") : fld.name );
+        } else {
+            return text;
+        }
+    } else {
+        return fld.getAttribute("title") ? fld.getAttribute("title") : ( fld.getAttribute("placeholder") ? fld.getAttribute("placeholder") : fld.name );
+    }
+}
+
+// 양쪽 공백 없애기
+function wrestTrim(fld)
+{
+    var pattern = /(^\s+)|(\s+$)/g; // \s 공백 문자
+    return fld.value.replace(pattern, "");
+}
+
+// 필수 입력 검사
+function wrestRequired(fld)
+{
+    if (wrestTrim(fld) == "") {
+        if (wrestFld == null) {
+            // 셀렉트박스일 경우에도 필수 선택 검사합니다.
+            wrestMsg = wrestItemname(fld) + " : 필수 "+(fld.type=="select-one"?"선택":"입력")+"입니다.\n";
+            wrestFld = fld;
+        }
+    }
+}
+
+// 김선용 2006.3 - 전화번호(휴대폰) 형식 검사 : 123-123(4)-5678
+function wrestTelNum(fld)
+{
+    if (!wrestTrim(fld)) return;
+
+    var pattern = /^[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}$/;
+    if(!pattern.test(fld.value)){
+        if(wrestFld == null){
+            wrestMsg = wrestItemname(fld)+" : 전화번호 형식이 올바르지 않습니다.\n\n하이픈(-)을 포함하여 입력하세요.\n";
+            wrestFld = fld;
+            fld.select();
+        }
+    }
+}
+
+// 이메일주소 형식 검사
+function wrestEmail(fld)
+{
+    if (!wrestTrim(fld)) return;
+
+    //var pattern = /(\S+)@(\S+)\.(\S+)/; 이메일주소에 한글 사용시
+    var pattern = /([0-9a-zA-Z_-]+)@([0-9a-zA-Z_-]+)\.([0-9a-zA-Z_-]+)/;
+    if (!pattern.test(fld.value)) {
+        if (wrestFld == null) {
+            wrestMsg = wrestItemname(fld) + " : 이메일주소 형식이 아닙니다.\n";
+            wrestFld = fld;
+        }
+    }
+}
+
+// 한글인지 검사 (자음, 모음 조합된 한글만 가능)
+function wrestHangul(fld)
+{
+    if (!wrestTrim(fld)) return;
+
+    //var pattern = /([^가-힣\x20])/i;
+    var pattern = /([^가-힣\x20])/;
+
+    if (pattern.test(fld.value)) {
+        if (wrestFld == null) {
+            wrestMsg = wrestItemname(fld) + ' : 한글이 아닙니다. (자음, 모음 조합된 한글만 가능)\n';
+            wrestFld = fld;
+        }
+    }
+}
+
+// 한글인지 검사2 (자음, 모음만 있는 한글도 가능)
+function wrestHangul2(fld)
+{
+    if (!wrestTrim(fld)) return;
+
+    var pattern = /([^가-힣ㄱ-ㅎㅏ-ㅣ\x20])/i;
+    //var pattern = /([^가-힣ㄱ-ㅎㅏ-ㅣ\x20])/;
+
+    if (pattern.test(fld.value)) {
+        if (wrestFld == null) {
+            wrestMsg = wrestItemname(fld) + ' : 한글이 아닙니다.\n';
+            wrestFld = fld;
+        }
+    }
+}
+
+// 한글,영문,숫자인지 검사3
+function wrestHangulAlNum(fld)
+{
+    if (!wrestTrim(fld)) return;
+
+    var pattern = /([^가-힣\x20^a-z^A-Z^0-9])/i;
+
+    if (pattern.test(fld.value)) {
+        if (wrestFld == null) {
+            wrestMsg = wrestItemname(fld) + ' : 한글, 영문, 숫자가 아닙니다.\n';
+            wrestFld = fld;
+        }
+    }
+}
+
+// 한글,영문 인지 검사
+function wrestHangulAlpha(fld)
+{
+    if (!wrestTrim(fld)) return;
+
+    var pattern = /([^가-힣\x20^a-z^A-Z])/i;
+
+    if (pattern.test(fld.value)) {
+        if (wrestFld == null) {
+            wrestMsg = wrestItemname(fld) + ' : 한글, 영문이 아닙니다.\n';
+            wrestFld = fld;
+        }
+    }
+}
+
+// 숫자인지검사
+// 배부른꿀꿀이님 추가 (http://dasir.com) 2003-06-24
+function wrestNumeric(fld)
+{
+    if (fld.value.length > 0) {
+        for (i = 0; i < fld.value.length; i++) {
+            if (fld.value.charAt(i) < '0' || fld.value.charAt(i) > '9') {
+                wrestMsg = wrestItemname(fld) + " : 숫자가 아닙니다.\n";
+                wrestFld = fld;
+            }
+        }
+    }
+}
+
+// 영문자 검사
+// 배부른꿀꿀이님 추가 (http://dasir.com) 2003-06-24
+function wrestAlpha(fld)
+{
+    if (!wrestTrim(fld)) return;
+
+    var pattern = /(^[a-zA-Z]+$)/;
+
+    if (!pattern.test(fld.value)) {
+        if (wrestFld == null) {
+            wrestMsg = wrestItemname(fld) + " : 영문이 아닙니다.\n";
+            wrestFld = fld;
+        }
+    }
+}
+
+// 영문자와 숫자 검사
+// 배부른꿀꿀이님 추가 (http://dasir.com) 2003-07-07
+function wrestAlNum(fld)
+{
+   if (!wrestTrim(fld)) return;
+
+   var pattern = /(^[a-zA-Z0-9]+$)/;
+
+   if (!pattern.test(fld.value)) {
+       if (wrestFld == null) {
+           wrestMsg = wrestItemname(fld) + " : 영문 또는 숫자가 아닙니다.\n";
+           wrestFld = fld;
+       }
+   }
+}
+
+// 영문자와 숫자 그리고 _ 검사
+function wrestAlNum_(fld)
+{
+   if (!wrestTrim(fld)) return;
+
+   var pattern = /(^[a-zA-Z0-9\_]+$)/;
+
+   if (!pattern.test(fld.value)) {
+       if (wrestFld == null) {
+           wrestMsg = wrestItemname(fld) + " : 영문, 숫자, _ 가 아닙니다.\n";
+           wrestFld = fld;
+       }
+   }
+}
+
+// 최소 길이 검사
+function wrestMinLength(fld)
+{
+    if (!wrestTrim(fld)) return;
+
+    var minlength = fld.getAttribute("minlength");
+
+    if (wrestFld == null) {
+        if (fld.value.length < parseInt(minlength)) {
+            wrestMsg = wrestItemname(fld) + " : 최소 "+minlength+"글자 이상 입력하세요.\n";
+            wrestFld = fld;
+        }
+    }
+}
+
+// 이미지 확장자
+function wrestImgExt(fld)
+{
+    if (!wrestTrim(fld)) return;
+
+    var pattern = /\.(gif|jpg|png)$/i; // jpeg 는 제외
+    if(!pattern.test(fld.value)){
+        if(wrestFld == null){
+            wrestMsg = wrestItemname(fld)+" : 이미지 파일이 아닙니다.\n.gif .jpg .png 파일만 가능합니다.\n";
+            wrestFld = fld;
+            fld.select();
+        }
+    }
+}
+
+// 확장자
+function wrestExtension(fld, css)
+{
+    if (!wrestTrim(fld)) return;
+
+    var str = css.split("="); // ext=?? <-- str[1]
+    var src = fld.value.split(".");
+    var ext = src[src.length - 1];
+
+    if (wrestFld == null) {
+        if (ext.toLowerCase() < str[1].toLowerCase()) {
+            wrestMsg = wrestItemname(fld) + " : ."+str[1]+" 파일만 가능합니다.\n";
+            wrestFld = fld;
+        }
+    }
+}
+
+// 공백 검사후 공백을 "" 로 변환
+function wrestNospace(fld)
+{
+    var pattern = /(\s)/g; // \s 공백 문자
+
+    if (pattern.test(fld.value)) {
+        if (wrestFld == null) {
+            wrestMsg = wrestItemname(fld) + " : 공백이 없어야 합니다.\n";
+            wrestFld = fld;
+        }
+    }
+}
+
+// submit 할 때 속성을 검사한다.
+function wrestSubmit()
+{
+    wrestMsg = "";
+    wrestFld = null;
+
+    var attr = null;
+
+    // 해당폼에 대한 요소의 개수만큼 돌려라
+    for (var i=0; i<this.elements.length; i++) {
+        var el = this.elements[i];
+
+        // Input tag 의 type 이 text, file, password 일때만
+        // 셀렉트 박스일때도 필수 선택 검사합니다. select-one
+        if (el.type=="text" || el.type=="hidden" || el.type=="file" || el.type=="password" || el.type=="select-one" || el.type=="textarea") {
+            if (el.getAttribute("required") != null) {
+                wrestRequired(el);
+            }
+
+            if (el.getAttribute("minlength") != null) {
+                wrestMinLength(el);
+            }
+
+            var array_css = el.className.split(" "); // class 를 공백으로 나눔
+
+            el.style.backgroundColor = wrestFldDefaultColor;
+
+            // 배열의 길이만큼 돌려라
+            for (var k=0; k<array_css.length; k++) {
+                var css = array_css[k];
+                switch (css) {
+                    case "required"     : wrestRequired(el); break;
+                    case "trim"         : wrestTrim(el); break;
+                    case "email"        : wrestEmail(el); break;
+                    case "hangul"       : wrestHangul(el); break;
+                    case "hangul2"      : wrestHangul2(el); break;
+                    case "hangulalpha"  : wrestHangulAlpha(el); break;
+                    case "hangulalnum"  : wrestHangulAlNum(el); break;
+                    case "nospace"      : wrestNospace(el); break;
+                    case "numeric"      : wrestNumeric(el); break;
+                    case "alpha"        : wrestAlpha(el); break;
+                    case "alnum"        : wrestAlNum(el); break;
+                    case "alnum_"       : wrestAlNum_(el); break;
+                    case "telnum"       : wrestTelNum(el); break; // 김선용 2006.3 - 전화번호 형식 검사
+                    case "imgext"       : wrestImgExt(el); break;
+                    default :
+                        if (/^extension\=/.test(css)) {
+                            wrestExtension(el, css); break;
+                        }
+                } // switch (css)
+            } // for (k)
+        } // if (el)
+    } // for (i)
+
+    // 필드가 null 이 아니라면 오류메세지 출력후 포커스를 해당 오류 필드로 옮김
+    // 오류 필드는 배경색상을 바꾼다.
+    if (wrestFld != null) {
+        // 경고메세지 출력
+        alert(wrestMsg);
+
+        if (wrestFld.style.display != "none") {
+            var id = wrestFld.getAttribute("id");
+
+            // 오류메세지를 위한 element 추가
+            var msg_el = document.createElement("strong");
+            msg_el.id = "msg_"+id;
+            msg_el.className = "msg_sound_only";
+            msg_el.innerHTML = "<i class='fa fa-exclamation-triangle' aria-hidden='true'></i>" + wrestMsg+"<br />";
+            wrestFld.parentNode.insertBefore(msg_el, wrestFld);
+
+            var new_href = document.location.href.replace(/#msg.+$/, "")+"#msg_"+id;
+
+            document.location.href = new_href;
+
+            wrestFld.style.backgroundColor = '#ffbfbf';
+            if (typeof(wrestFld.select) != "undefined")
+                wrestFld.select();
+            wrestFld.focus();
+        }
+        return false;
+    }
+
+    if (this.oldsubmit && this.oldsubmit() == false)
+        return false;
+
+    return true;
+}
+
+
+// 초기에 onsubmit을 가로채도록 한다.
+function wrestInitialized()
+{
+    for (var i = 0; i < document.forms.length; i++) {
+        // onsubmit 이벤트가 있다면 저장해 놓는다.
+        if (document.forms[i].onsubmit) {
+            document.forms[i].oldsubmit = document.forms[i].onsubmit;
+        }
+        document.forms[i].onsubmit = wrestSubmit;
+    }
+}
+
+// 폼필드 자동검사
+$(document).ready(function(){
+    // onload
+    wrestInitialized();
+});��0�      e�Re�RF�T�e֌�   `    O^partitionKey=%28https%2Crobotis.com%29,:https://www.robotis.com/js/wrest.js?ver=20240215085142 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 14 Feb 2024 23:51:46 GMT
+Server: Apache/2.2.20 (Unix) mod_ssl/2.2.20 OpenSSL/1.0.1e-fips DAV/2 PHP/5.2.14
+Last-Modified: Mon, 16 Oct 2017 07:24:19 GMT
+ETag: "9035ff-2b99-55ba4e50aaec0"
+Accept-Ranges: bytes
+Content-Length: 11161
+Content-Type: application/javascript
+ original-response-headers Date: Wed, 14 Feb 2024 23:51:46 GMT
+Server: Apache/2.2.20 (Unix) mod_ssl/2.2.20 OpenSSL/1.0.1e-fips DAV/2 PHP/5.2.14
+Last-Modified: Mon, 16 Oct 2017 07:24:19 GMT
+ETag: "9035ff-2b99-55ba4e50aaec0"
+Accept-Ranges: bytes
+Content-Length: 11161
+Connection: close
+Content-Type: application/javascript
+ ctid 2 uncompressed-len 0 net-response-time-onstart 2694 net-response-time-onstop 2695   +�
